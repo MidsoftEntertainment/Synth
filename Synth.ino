@@ -32,7 +32,7 @@ void loop() {
 
   // Read an analog value from pin A5 and map it to a semitone
   int potValue = analogRead(potPin);
-  int note = map(potValue, 0, 1023, 0, 24);
+  int note = map(potValue, 0, 1023, 0, 25);
 
   float freq = baseFreq * pow(2.f, note / 12.f);
 
